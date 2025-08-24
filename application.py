@@ -165,4 +165,9 @@ def health():
 # -------------------------
 if __name__ == '__main__':
     # ถ้ารำคาญ log oneDNN: set TF_ENABLE_ONEDNN_OPTS=0 ก่อนรัน
-    application.run(debug=True, use_reloader=False)
+    application.run(
+        host="0.0.0.0",  # listen on all network interfaces (so EC2 clients can reach it)
+        port=5000,       # expose on port 5000
+        debug=True,      # enables debugger + auto error pages
+        use_reloader=False  # avoid double-start issues when debug=True
+    )
