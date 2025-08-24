@@ -20,13 +20,14 @@ CORS(
     application,
     resources={r"/*": {
         "origins": [
-            "https://nichapintong.github.io",
             "http://localhost:5173",
-            "http://127.0.0.1:5173"
+            "http://127.0.0.1:5173",
+            "https://nichapintong.github.io"
         ]
     }},
     supports_credentials=False,
-    allow_headers=["Content-Type"]
+    allow_headers=["Content-Type"],
+    methods=["GET","POST","OPTIONS"]
 )
 
 UPLOAD_FOLDER = 'uploads'
