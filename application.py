@@ -16,9 +16,18 @@ from tensorflow.keras.preprocessing.image import img_to_array
 # CONFIG
 # -------------------------
 application = Flask(__name__)
-CORS(application, resources={
-    r"/*": {"origins": ["https://nichapintong.github.io"]}
-})
+CORS(
+    application,
+    resources={r"/*": {
+        "origins": [
+            "https://nichapintong.github.io",
+            "http://localhost:5173",
+            "http://127.0.0.1:5173"
+        ]
+    }},
+    supports_credentials=False,
+    allow_headers=["Content-Type"]
+)
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
