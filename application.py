@@ -46,7 +46,7 @@ class_mapping = {
     "Leaf_Spot": {"ID": 4, "nameEN": "Leaf Spot", "nameTH": "โรคใบจุด"},
     "Small_Leaf_Blight": {"ID": 5, "nameEN": "Small Leaf Blight", "nameTH": "โรคใบไหม้แผลเล็ก"},
     "Large_Leaf_Blight": {"ID": 6, "nameEN": "Large Leaf Blight", "nameTH": "โรคใบไหม้แผลใหญ่"},
-    "SCMV_MDMV": {"ID": 7, "nameEN": "SCMV & MDMV", "nameTH": "โรคSCMV&MDMV"},
+    "SCMV_MDMV": {"ID": 7, "nameEN": "SCMV & MDMV", "nameTH": "โรคใบด่าง(ไวรัสSCMV&MDMV)"},
     "Healthy": {"ID": 8, "nameEN": "Healthy", "nameTH": "ไม่เป็นโรค"}
 }
 
